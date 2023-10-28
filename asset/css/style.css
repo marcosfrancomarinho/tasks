@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    min-height: 90vh;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 3vw;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 70vh;
+    background: linear-gradient(rgb(18, 18, 18), rgb(92, 90, 90));
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 white;
+}
+
+.check {
+    text-decoration: line-through;
+}
+
+.alter {
+    display: none;
+}
+
+form {
+    width: 70%;
+    margin-bottom: 2%;
+}
+
+input {
+    width: 100%;
+    padding: 3%;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.result {
+    width: 100%;
+    height: 500px;
+    overflow-x: auto;
+    background-color: gainsboro;
+    border: 5px inset black;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.container__task {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 99%;
+    margin-top: 0.5%;
+    background: rgb(156, 152, 152);
+    padding: 1%;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px inset black;
+}
+
+.task {
+    font-size: 1.6vw;
+}
+
+.btn-all {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    gap: 10%;
+}
+
+button {
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 1%;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+.checked {
+    background: linear-gradient(black, rgb(34, 33, 33));
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    main {
+        width: 95%;
+        height: 700px;
+    }
+
+    .result {
+        height: 80%;
+    }
+
+    form {
+        width: 85%;
+    }
+
+    input {
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 4.5vw;
+    }
+
+    .task {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    main {
+        width: 60%;
+        height: 800px;
+
+    }
+
+    .result {
+        height: 90%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    input {
+        font-size: 2vw;
+    }
+
+    button {
+        font-size: 2vw;
+    }
+
+    .task {
+        font-size: 3vw;
+    }
+}
