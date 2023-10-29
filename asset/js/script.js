@@ -4,7 +4,6 @@ const elmt = {
     search: document.querySelector("#search"),
     form: document.querySelector(".form"),
     result: document.querySelector(".result"),
-    alter: document.querySelector(".alter"),
 }
 const clear = (e) => e.search.value = ""
 const focus = (e) => e.search.focus()
