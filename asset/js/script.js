@@ -56,7 +56,7 @@ function alter(value) {
     const chores = value.children[0].innerHTML
     const index = list.findIndex(data => data.task == chores)
     list[index].task = elmt.search.value
-    value.children[0].innerHTML = elmt.search.value
+    value.children[0].innerText = elmt.search.value
     setItemLocalStorage()
     value.children[1].children[1].style.display = "inline-block"
     value.children[1].children[2].style.display = "none"
